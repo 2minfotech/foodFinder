@@ -1,0 +1,317 @@
+
+const MyTabs = () => {
+  return (
+    <Tab.Navigator >
+      <Tab.Screen name="onBoarding" component={OnBoardingScreen} options={{ headerShown: false }} />
+      <Tab.Screen name="Food Finder" component={AskLogin} options={{ headerShown: false }} />
+      <Tab.Screen name="Login" component={Login} options={{
+        title: "Sign In",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="Sign-Up" component={SignUp} options={{
+        title: "Create Account",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="Welcome" component={Welcome} options={{ headerShown: false }} />
+      <Tab.Screen name="2nd" component={SplashScreen} options={{ headerShown: false }} />
+      <Tab.Screen name="Verification" component={Verification} options={{ headerShown: false }} />
+      <Tab.Screen name="Terms and Condition" component={Terms} options={{
+        title: "terms and conditins",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="All Categories" component={AllCategories} options={{
+        title: "All Categories",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="Reset Password" component={Reset} options={{
+        title: "Forgot password",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="Categories" component={Categories} options={{ headerShown: false }} />
+      <Tab.Screen name="search" component={SearchFood} options={{ headerShown: false }} />
+      <Tab.Screen name="pizza" component={PizzaOrder} options={{ headerShown: false }} />
+      <Tab.Screen name="cart" component={Cart} options={{ headerShown: false }} />
+      <Tab.Screen name="place_order" component={PlaceOrder} options={{
+        title: "Checkout",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="editProfile" component={EditProfile} options={{
+        title: "edit profile",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="address" component={Address} options={{
+        title: "Checkout",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="visa" component={CheckoutCard} options={{
+        title: "Checkout",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="favorites" component={Favorites} options={{ headerShown: false }} />
+      <Tab.Screen name="profile" component={Profile} options={{ headerShown: false }} />
+      <Tab.Screen name="newAddress" component={AddNewAddress} options={{
+        title: "add new address",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="editAddress" component={EditAddress} options={{
+        title: "edit address",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="notification" component={Notification} options={{
+        title: "notifications",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="deliveryAddress" component={DeliveryAddress} options={{
+        title: "delivery address",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="paymentMethod" component={PaymentMethod} options={{
+        title: "payment method",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="addcard" component={AddCard} options={{
+        title: "add credit card",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="about" component={About} options={{
+        title: "about us",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="categories2" component={NewCategories} options={{ headerShown: false }} />
+      <Tab.Screen name="categoriesAll" component={CategoriesAll} options={{
+        title: "all categories",
+        headerStyle: {
+          backgroundColor: '#00b970',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="addextra" component={AddExtra} options={{ headerShown: false }} />
+      <Tab.Screen name="filter" component={Filter} options={{
+        title: "filter",
+        headerStyle: {
+          backgroundColor: '#00b970',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="NewAddress" component={NewAddress} options={{
+        title: "edit address",
+        headerStyle: {
+          backgroundColor: '#00b970',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="aboutgreen" component={AboutGreen} options={{
+        title: "about us",
+        headerStyle: {
+          backgroundColor: '#00b970',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="myorder" component={MyOrder} options={{
+        title: "my orders",
+        headerStyle: {
+          backgroundColor: '#fff',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="SearchFilter" component={SearchFilter} options={{ headerShown: false }} />
+      <Tab.Screen name="cartAdd" component={CartAdd} options={{ headerShown: false }} />
+      <Tab.Screen name="settings" component={Settings} options={{ headerShown: false }} />
+      <Tab.Screen name="GreenDelivery" component={GreenDelivery} options={{
+        title: "delivery address",
+        headerStyle: {
+          backgroundColor: '#00b970',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="payment" component={Payment} options={{
+        title: "payment method",
+        headerStyle: {
+          backgroundColor: '#00b970',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="DefualtPayment" component={DefualtPayment} options={{ headerShown: false }} />
+      <Tab.Screen name="Defualtdiscover" component={DiscoverFood} options={{ headerShown: false }} />
+      <Tab.Screen name="notifications" component={NotificationScreen} options={{
+        title: "notifications",
+        headerStyle: {
+          backgroundColor: '#00b970',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 20,
+          textTransform: 'capitalize',
+        },
+      }} />
+      <Tab.Screen name="OpneCamera" component={OpneCamera} />
+      <Tab.Screen name="imagePicker" component={ImagePickerExample} />
+      <Tab.Screen name="favoritesRemover" component={FavoritesRemover} options={{ headerShown: false }} />
+   
+    </Tab.Navigator>
+  );
+}

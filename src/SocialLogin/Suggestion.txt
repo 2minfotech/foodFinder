@@ -1,0 +1,169 @@
+“first_name”: {
+      “type”: “string”
+    },
+    “last_name”: {
+      “type”: “string”
+    },
+    “password”: {
+      “type”: “string”,
+      “required”: false
+    },
+    “name”: {
+      “type”: “string”,
+      “required”: false
+    },
+    “email”: {
+      “type”: “string”
+    },
+    “phone”: {
+      “type”: “number”
+    },
+    “image_url”: {
+      “type”: “string”,
+      “required”: false,
+      “default”: “”
+    },
+    “address”: {
+      “type”: “object”,
+      “required”: false
+    },
+    “location”: {
+      “type”: “geopoint”,
+      “required”: false
+    },
+    “postal_code”: {
+      “type”: “number”
+    },
+    “overall_rating”: {
+      “type”: “number”,
+      “required”: false,
+      “default”: 0
+    },
+    “total_review”: {
+      “type”: “number”,
+      “required”: false,
+      “default”: 0
+    },
+    “status”: {
+      “type”: “number”,
+      “required”: true,
+      “description”: “0: Inactive, 1 : active, 2 : trash”,
+      “default”: 1
+    },
+    “signup_via”: {
+      “type”: “string”,
+      “required”: true,
+      “default”: “app”
+    },
+    “social_id”: {
+      “type”: “string”
+    },
+    “username”: {
+      “type”: “string”,
+      “required”: false
+    },
+    “mobile_verified”: {
+      “type”: “boolean”,
+      “required”: true,
+      “default”: false
+    },
+    “role”: {
+      “type”: “string”,
+      “description”: “user: end/service provider user, admin: super admin, company: company admin”,
+      “default”: “user”
+    },
+    “added_by”: {
+      “type”: “number”,
+      “description”: “0: user sign up myself, 1: added by provider, 2:added by admin”,
+      “default”: 0
+    },
+    “user_type”: {
+      “type”: “number”,
+      “required”: true,
+      “description”: “1 : user, 2 : provider “,
+      “default”: 1
+    },
+    “email_verification_code”: {
+      “type”: “number”
+    },
+    “reset_password_code”: {
+      “type”: “number”,
+      “required”: false
+    },
+    “reset_password_flag”: {
+      “type”: “string”,
+      “description”: “mobile/email”,
+      “default”: “”
+    },
+    “mobile_otp”: {
+      “type”: “number”
+    },
+    “emailVerified”: {
+      “type”: “boolean”,
+      “required”: false,
+      “default”: false
+    },
+    “verification_token”: {
+      “type”: “string”
+    },
+    “referral_code”: {
+      “type”: “string”,
+      “description”: “referral code”,
+      “default”: “”
+    },
+    “about_me”: {
+      “type”: “string”
+    }
+
+    /* 
+    //Update document 
+    dbh.collection("food-delivery-93a37")
+      .doc("GubBPTwj2cjQqKUSLdVm")
+      .set({
+        firstName: "Ravi",
+        lastName: "Kumar Bijarniya",
+      })
+      .then((docRef) => {
+        console.log("Document written with ID: ", docRef.id);
+      })
+      .catch((error) => {
+        console.error("Error adding document: ", error);
+      });
+      */
+
+  /*
+    // Read document 
+    dbh.collection("food-delivery-93a37")
+     .get()
+      .then((querySnapshot) => {
+        console.log("querySnapshot --- ", querySnapshot);
+         querySnapshot.forEach((doc) => {
+        console.log(`${doc.id} => ${doc.data().firstName} => ${doc.data().lastName}`);
+    });
+        console.log("===================", new Date());
+      })
+      .catch((error) => {
+        console.error("Error adding document: ", error);
+      });
+      */
+
+  // Read document with limit
+  /*let fdList = await dbh.collection("food-delivery-93a37").limit(3).get();
+    fdList.forEach((doc) => {
+      console.log(
+        `${doc.id} => ${doc.data().firstName} => ${doc.data().lastName}`
+      );
+    });
+    console.log("===================", new Date());*/
+
+  /*
+    // delete document 
+    dbh.collection("food-delivery-93a37")
+      .doc("o1HPLAnkoDCedKUmY6US")
+      .delete()
+      .then(() => {
+        console.log("Document successfully deleted!");
+      })
+      .catch((error) => {
+        console.error("Error removing document: ", error);
+      });*/

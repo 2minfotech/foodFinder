@@ -1,14 +1,15 @@
 {
   "expo": {
-    "name": "DesignUI",
-    "slug": "DesignUI",
+    "name": "food_delivery",
+    "slug": "food_delivery",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "facebookScheme":"483211206177197"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,13 +18,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "food"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.fastfood"
     },
     "web": {
       "favicon": "./assets/favicon.png"
